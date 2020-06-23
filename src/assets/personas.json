@@ -1,0 +1,5 @@
+[
+    { "nombre": "Diego", "apellido": "Maradona", "edad": 59, "domicilio": "Bs As"},
+    { "nombre": "Leo", "apellido": "Messi", "edad": 30 , "domicilio": "Barcelona"},
+    { "nombre": "Carlos", "apellido": "Teves", "edad": 33 , "domicilio": "Bs. As"}
+]
