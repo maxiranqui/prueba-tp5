@@ -16,6 +16,8 @@ export class CrearPersonaComponent implements OnInit {
 
  //crearPersona: any;
   showConsultarPersona: Boolean= false;
+  showCrearPersona: boolean = true;
+
 
   constructor(private fb: FormBuilder, private router: ActivatedRoute) {}
 
@@ -27,7 +29,7 @@ export class CrearPersonaComponent implements OnInit {
       if(Object.keys(this.param).length){
         this.persona = this.param
       }else{
-        this.persona = this.crearPersona;
+        this.persona = this.param;
       }
 
     this.initForm(this.persona);
@@ -44,6 +46,8 @@ export class CrearPersonaComponent implements OnInit {
   submit(){
       this.crearPersona = this.itemForm.value;
       this.showConsultarPersona = true;
+      this.showCrearPersona = false;
+
   }
 
 }

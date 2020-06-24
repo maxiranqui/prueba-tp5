@@ -10,6 +10,7 @@ export interface Persona {
 	apellido: string;
   edad: number;
   domicilio : string;
+
 }
 @Component({
   selector: 'app-consultar-persona',
@@ -25,6 +26,7 @@ export class ConsultarPersonaComponent implements OnInit {
 
   displayedColumns: string[] = [ 'nombre', 'apellido', 'edad', 'domicilio', 'editar' ];
   dataSource : any[]= [];
+
   
   constructor(private router: Router, private consultarPersonaService: ConsultarPersonaService) { }
 

@@ -6,7 +6,11 @@ import {CrearPersonaComponent} from './crear-persona/crear-persona.component';
 
 const routes: Routes = [
   {path: 'consultar-persona', component: ConsultarPersonaComponent},
-  {path: 'crear-persona', component: CrearPersonaComponent}
+  {path: 'crear-persona', component: CrearPersonaComponent},
+
+  { path: '', redirectTo: 'consultar-persona', pathMatch: 'full' },
+  { path: '**', component: ConsultarPersonaComponent },
+
 ];
 
 @NgModule({

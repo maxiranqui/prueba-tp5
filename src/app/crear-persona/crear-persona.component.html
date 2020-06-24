@@ -1,7 +1,7 @@
-<p>crear-persona works!</p>
+<div *ngIf="showCrearPersona">
 
-<form [formGroup]='itemForm' (ngSubmit)=submit()>
-    <div class="contenedor">  
+  <form [formGroup]='itemForm' (ngSubmit)=submit()>
+      <div class="contenedor">  
        
             <mat-card-title>Formulario</mat-card-title>
             
@@ -40,10 +40,10 @@
                 <button mat-raised-button color="primary">Guardar</button>
             </div>
         
-    </div>
+     </div>
 
-
-</form>
+   </form>
+</div>
 
 <div *ngIf="showConsultarPersona">
      <app-consultar-persona [consultarPersona]="crearPersona"></app-consultar-persona> -->
